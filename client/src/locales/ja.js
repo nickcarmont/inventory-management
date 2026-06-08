@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充発注',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -106,6 +107,8 @@ export default {
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
+    submittedOrders: '提出済み注文',
+    leadTimeDays: '{days}日',
     totalOrders: '総注文数',
     totalRevenue: '総収益',
     avgOrderValue: '平均注文額',
@@ -125,7 +128,8 @@ export default {
       totalValue: '合計金額',
       status: 'ステータス',
       expectedDelivery: '予定配達日',
-      actualDelivery: '実際の配達日'
+      actualDelivery: '実際の配達日',
+      leadTime: 'リードタイム'
     }
   },
 
@@ -188,6 +192,35 @@ export default {
     }
   },
 
+  // Restocking
+  restocking: {
+    title: '補充発注',
+    description: '予算を設定し、需要予測に基づいて品目を補充します',
+    budgetTitle: '利用可能な予算',
+    budgetUsed: '使用済み予算',
+    budgetRemaining: '残り',
+    recommendedItems: '推奨補充品目',
+    placeOrder: '注文する',
+    placingOrder: '注文中...',
+    orderPlaced: '注文 {orderNumber} が提出されました',
+    orderSummary: '{days}日で配達、{date}までに到着予定',
+    viewInOrders: '注文画面で確認',
+    noRecommendations: '現在の予算内に収まる品目がありません。予算を増やすと推奨品目が表示されます。',
+    fullFill: '全量',
+    partialFill: '一部',
+    itemsCount: '{count}件',
+    table: {
+      sku: 'SKU',
+      itemName: '品目名',
+      shortfall: '不足数',
+      orderQty: '注文数',
+      unitCost: '単価',
+      lineCost: '小計',
+      leadTime: 'リードタイム',
+      fill: '充足'
+    }
+  },
+
   // Filters
   filters: {
     timePeriod: '期間',
@@ -201,6 +234,7 @@ export default {
   // Statuses
   status: {
     delivered: '配達済み',
+    submitted: '提出済み',
     shipped: '出荷済み',
     processing: '処理中',
     backordered: 'バックオーダー',
@@ -359,7 +393,14 @@ export default {
     '48V DC Power Supply Unit': '48V DC電源ユニット',
     'USB-C PD 100W Power Supply': 'USB-C PD 100W電源',
     'Battery Backup Power Supply': 'バッテリバックアップ電源',
-    'Adjustable Bench Power Supply': '可変ベンチ電源'
+    'Adjustable Bench Power Supply': '可変ベンチ電源',
+    'Industrial Widget Type A': '産業用ウィジェットタイプA',
+    'Steel Bearing Assembly': 'スチールベアリング組立',
+    'High-Temperature Gasket': '高温ガスケット',
+    'Electric Motor 5HP': '電動モータ5HP',
+    'Oil Filter Cartridge': 'オイルフィルタカートリッジ',
+    'Pressure Relief Valve': '圧力逃し弁',
+    'Logic Controller Board': 'ロジックコントローラ基板'
   },
 
   // Customer Names

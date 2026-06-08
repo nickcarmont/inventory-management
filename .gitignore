@@ -52,3 +52,8 @@ logs/
 
 # Environment variables
 .env
+
+# Generated PRD docs
+PRD.html
+.claude/prd-state.json
+.claude/prd-screenshot.png
